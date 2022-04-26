@@ -553,7 +553,7 @@ DnD5eCharacter:Charisma 	a rdfs:Class ;
 
 DnD5eCharacter:Skill 	a rdfs:Class ;
               rdfs:subClassOf TTRpg:CharacterType ;
-              rdfs:label "Skill"@en .
+              rdfs:label "Skill"@en ;
               rdfs:comment "An indicator of a characters aptness in a certain skill that is derived from a parent ability."@en .
 
 DnD5eCharacter:Acrobatics 	a rdfs:Class ;
@@ -666,12 +666,12 @@ DnD5eCharacter:Survival 	a rdfs:Class ;
 
 DnD5eCharacter:Proficiency 	a rdfs:Class ;
               rdfs:subClassOf TTRpg:CharacterType ;
-              rdfs:label "Proficiency"@en .
+              rdfs:label "Proficiency"@en ;
               rdfs:comment "This means a character is proficient in a certain skill. The acommpanying skill can be indicated using the DnD5eCharacter:proficientIn property."@en .
 
 DnD5eCharacter:Expertise 	a rdfs:Class ;
               rdfs:subClassOf TTRpg:CharacterType ;
-              rdfs:label "Expertise"@en .
+              rdfs:label "Expertise"@en ;
               rdfs:comment "This means a character is an expert in a certain skill. The acommpanying skill can be indicated using the DnD5eCharacter:expertIn property."@en .
 
 ## D&D Alignments
@@ -743,11 +743,11 @@ DnD5eCharacter:Acolyte 	a rdfs:Class ;
 DnD5eCharacter:Monster 	a rdfs:Class ;
               rdfs:subClassOf TTRpg:CharacterType ;
               DnD5eCharacter:type DnD5eCharacter:MonsterType ;
-              rdfs:label "Monster"@en .
+              rdfs:label "Monster"@en ;
               rdfs:comment "A monster in Dungeons & Dragons, usually the actions of such a monster are decided by the DM."@en .
 
 DnD5eCharacter:MonsterType 	a rdfs:Class ;
-              rdfs:label "Monster Type"@en .
+              rdfs:label "Monster Type"@en ;
               rdfs:comment "A type of monster."@en .
 
 DnD5eCharacter:Abberation 	a rdfs:Class ;
