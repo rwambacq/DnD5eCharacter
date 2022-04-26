@@ -516,7 +516,7 @@ DnD5eCharacter:SchoolOfEvocation 	a rdfs:Class ;
 
 DnD5eCharacter:AbilityScore 	a rdfs:Class ;
               rdfs:subClassOf TTRpg:CharacterType ;
-              rdfs:label "Ability Score"@en .
+              rdfs:label "Ability Score"@en ;
               rdfs:comment "An indicator of a characters aptness in a certain ability. These abilities are strength, dexterity, constitution, intelligence, wisdom and charisma."@en .
 
 DnD5eCharacter:Strength 	a rdfs:Class ;
