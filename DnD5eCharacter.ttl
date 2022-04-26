@@ -731,7 +731,7 @@ DnD5eCharacter:ChaoticEvil 	a rdfs:Class ;
 DnD5eCharacter:Background 	a rdfs:Class ;
               rdfs:subClassOf TTRpg:CharacterType ;
               rdfs:label "Background"@en ;
-              rdfs:comment "A background gives more information about a character and can help you play that character by explaining their motivations and their past."
+              rdfs:comment "A background gives more information about a character and can help you play that character by explaining their motivations and their past."@en .
 
 DnD5eCharacter:Acolyte 	a rdfs:Class ;
               rdfs:subClassOf TTRpg:Background ;
