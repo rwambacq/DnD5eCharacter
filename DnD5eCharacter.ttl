@@ -63,7 +63,98 @@ DnD5eCharacter:Tiefling 	a rdfs:Class ;
               rdfs:label "Tiefling"@en ;
               rdfs:comment "To be greeted with stares and whispers, to suffer violence and insult on the street, to see mistrust and fear in every eye: this is the lot of the tiefling. And to twist the knife, tieflings know that this is because a pact struck generations ago infused the essence of Asmodeus, overlord of the Nine Hells (and many of the other powerful devils serving under him) into their bloodline. Their appearance and their nature are not their fault but the result of an ancient sin, for which they and their children and their children's children will always be held accountable."@en .
 
-							
+## D&D Subraces
+
+DnD5eCharacter:Subrace 	a rdfs:Class ;
+													rdfs:subClassOf DnD5eCharacter:Race ;
+													rdfs:label "Subrace"@en ;
+													rdfs:comment "A DnD5eCharacter:Subrace is the superclass that represents the concept of a subrace within Dungeons and Dragons. This further specifies the race of a character. Not every race has subraces tied to it."@en .
+
+DnD5eCharacter:DraconicAncestry a rdfs:Class ;
+              rdfs:subClassOf DnD5eCharacter:Subrace ;
+              DnD5eCharacter:subraceOf DnD5eCharacter:Dragonborn ;
+              rdfs:label "Draconic Ancestry"@en .
+
+DnD5eCharacter:HillDwarf a rdfs:Class ;
+              rdfs:subClassOf DnD5eCharacter:Subrace ;
+              DnD5eCharacter:subraceOf DnD5eCharacter:Dwarf ;
+              rdfs:label "Hill Dwarf"@en .
+
+DnD5eCharacter:HighElf a rdfs:Class ;
+              rdfs:subClassOf DnD5eCharacter:Subrace ;
+              DnD5eCharacter:subraceOf DnD5eCharacter:Elf ;
+              rdfs:label "High Elf"@en .
+
+DnD5eCharacter:RockGnome a rdfs:Class ;
+              rdfs:subClassOf DnD5eCharacter:Subrace ;
+              DnD5eCharacter:subraceOf DnD5eCharacter:Gnome ;
+              rdfs:label "Rock Gnome"@en .
+
+DnD5eCharacter:Lightfoot a rdfs:Class ;
+              rdfs:subClassOf DnD5eCharacter:Subrace ;
+              DnD5eCharacter:subraceOf DnD5eCharacter:Halfling ;
+              rdfs:label "Lightfoot"@en .
+
+DnD5eCharacter:Callshite a rdfs:Class ;
+              rdfs:subClassOf DnD5eCharacter:Subrace ;
+              DnD5eCharacter:subraceOf DnD5eCharacter:Human ;
+              rdfs:label "Callshite"@en .
+
+DnD5eCharacter:Chondathan a rdfs:Class ;
+              rdfs:subClassOf DnD5eCharacter:Subrace ;
+              DnD5eCharacter:subraceOf DnD5eCharacter:Human ;
+              rdfs:label "Chondathan"@en .
+
+DnD5eCharacter:Damaran a rdfs:Class ;
+              rdfs:subClassOf DnD5eCharacter:Subrace ;
+              DnD5eCharacter:subraceOf DnD5eCharacter:Human ;
+              rdfs:label "Damaran"@en .
+
+DnD5eCharacter:Illuskan a rdfs:Class ;
+              rdfs:subClassOf DnD5eCharacter:Subrace ;
+              DnD5eCharacter:subraceOf DnD5eCharacter:Human ;
+              rdfs:label "Illuskan"@en .
+
+DnD5eCharacter:Mulan a rdfs:Class ;
+              rdfs:subClassOf DnD5eCharacter:Subrace ;
+              DnD5eCharacter:subraceOf DnD5eCharacter:Human ;
+              rdfs:label "Mulan"@en .
+
+DnD5eCharacter:Rashemi a rdfs:Class ;
+              rdfs:subClassOf DnD5eCharacter:Subrace ;
+              DnD5eCharacter:subraceOf DnD5eCharacter:Human ;
+              rdfs:label "Rashemi"@en .
+
+DnD5eCharacter:Shou a rdfs:Class ;
+              rdfs:subClassOf DnD5eCharacter:Subrace ;
+              DnD5eCharacter:subraceOf DnD5eCharacter:Human ;
+              rdfs:label "Shou"@en .
+
+DnD5eCharacter:Tethyrian a rdfs:Class ;
+              rdfs:subClassOf DnD5eCharacter:Subrace ;
+              DnD5eCharacter:subraceOf DnD5eCharacter:Human ;
+              rdfs:label "Tethyrian"@en .
+
+DnD5eCharacter:Turami a rdfs:Class ;
+              rdfs:subClassOf DnD5eCharacter:Subrace ;
+              DnD5eCharacter:subraceOf DnD5eCharacter:Human ;
+              rdfs:label "Turami"@en .
+
+DnD5eCharacter:Variant 	a rdfs:Class ;
+													rdfs:subClassOf DnD5eCharacter:Race ;
+													rdfs:label "Variant"@en ;
+													rdfs:comment "A DnD5eCharacter:Variant is the superclass that represents the concept of a variant within Dungeons and Dragons. This further specifies the race of a character. Not every race has variants tied to it."@en .
+
+DnD5eCharacter:StandardHuman a rdfs:Class ;
+              rdfs:subClassOf DnD5eCharacter:Variant ;
+              DnD5eCharacter:variantOf DnD5eCharacter:Human ;
+              rdfs:label "Standard Human"@en .
+
+DnD5eCharacter:VariantHuman a rdfs:Class ;
+              rdfs:subClassOf DnD5eCharacter:Variant ;
+              DnD5eCharacter:variantOf DnD5eCharacter:Human ;
+              rdfs:label "Variant Human"@en .
+
 ## D&D Classes
 
 DnD5eCharacter:Class 	a rdfs:Class ;
@@ -197,56 +288,53 @@ DnD5eCharacter:DraconicBloodline 	a rdfs:Class ;
               rdfs:subClassOf DnD5eCharacter:SorcerousOrigin ;
               rdfs:label "Draconic Bloodline"@en .
 
-DnD5eCharacter:DraconicAncestryType a rdfs:Class ;
-              rdfs:label "Draconic Ancestry Type"@en .
-
 DnD5eCharacter:BlueDragon 	a rdfs:Class ;
-              rdfs:subClassOf DnD5eCharacter:DraconicAncestryType ;
+              rdfs:subClassOf DnD5eCharacter:DraconicAncestry ;
               rdfs:subClassOf DnD5eCharacter:DraconicBloodline ;
               rdfs:label "Blue Dragon"@en .
 
 DnD5eCharacter:BlackDragon 	a rdfs:Class ;
-              rdfs:subClassOf DnD5eCharacter:DraconicAncestryType ;
+              rdfs:subClassOf DnD5eCharacter:DraconicAncestry ;
               rdfs:subClassOf DnD5eCharacter:DraconicBloodline ;
               rdfs:label "Black Dragon"@en .
 
 DnD5eCharacter:CopperDragon 	a rdfs:Class ;
-              rdfs:subClassOf DnD5eCharacter:DraconicAncestryType ;
+              rdfs:subClassOf DnD5eCharacter:DraconicAncestry ;
               rdfs:subClassOf DnD5eCharacter:DraconicBloodline ;
               rdfs:label "Copper Dragon"@en .
 
 DnD5eCharacter:RedDragon 	a rdfs:Class ;
-              rdfs:subClassOf DnD5eCharacter:DraconicAncestryType ;
+              rdfs:subClassOf DnD5eCharacter:DraconicAncestry ;
               rdfs:subClassOf DnD5eCharacter:DraconicBloodline ;
               rdfs:label "Red Dragon"@en .
 
 DnD5eCharacter:BrassDragon 	a rdfs:Class ;
-              rdfs:subClassOf DnD5eCharacter:DraconicAncestryType ;
+              rdfs:subClassOf DnD5eCharacter:DraconicAncestry ;
               rdfs:subClassOf DnD5eCharacter:DraconicBloodline ;
               rdfs:label "Brass Dragon"@en .
 
 DnD5eCharacter:GoldDragon 	a rdfs:Class ;
-              rdfs:subClassOf DnD5eCharacter:DraconicAncestryType ;
+              rdfs:subClassOf DnD5eCharacter:DraconicAncestry ;
               rdfs:subClassOf DnD5eCharacter:DraconicBloodline ;
               rdfs:label "Gold Dragon"@en .
 
 DnD5eCharacter:SilverDragon 	a rdfs:Class ;
-              rdfs:subClassOf DnD5eCharacter:DraconicAncestryType ;
+              rdfs:subClassOf DnD5eCharacter:DraconicAncestry ;
               rdfs:subClassOf DnD5eCharacter:DraconicBloodline ;
               rdfs:label "Silver Dragon"@en .
 
 DnD5eCharacter:BronzeDragon 	a rdfs:Class ;
-              rdfs:subClassOf DnD5eCharacter:DraconicAncestryType ;
+              rdfs:subClassOf DnD5eCharacter:DraconicAncestry ;
               rdfs:subClassOf DnD5eCharacter:DraconicBloodline ;
               rdfs:label "Bronze Dragon"@en .
 
 DnD5eCharacter:GreenDragon 	a rdfs:Class ;
-              rdfs:subClassOf DnD5eCharacter:DraconicAncestryType ;
+              rdfs:subClassOf DnD5eCharacter:DraconicAncestry ;
               rdfs:subClassOf DnD5eCharacter:DraconicBloodline ;
               rdfs:label "Green Dragon"@en .
 
 DnD5eCharacter:WhiteDragon 	a rdfs:Class ;
-              rdfs:subClassOf DnD5eCharacter:DraconicAncestryType ;
+              rdfs:subClassOf DnD5eCharacter:DraconicAncestry ;
               rdfs:subClassOf DnD5eCharacter:DraconicBloodline ;
               rdfs:label "White Dragon"@en .
 
@@ -3673,6 +3761,18 @@ DnD5eCharacter:subclassOf a rdf:Property ;
               rdfs:comment ""@en ;
               rdfs:domain DnD5eCharacter:Subclass ;
               rdfs:range DnD5eCharacter:Class .
+
+DnD5eCharacter:subraceOf a rdf:Property ;
+              rdfs:label "Subrace Of"@en ;
+              rdfs:comment ""@en ;
+              rdfs:domain DnD5eCharacter:Subrace ;
+              rdfs:range DnD5eCharacter:Race .
+
+DnD5eCharacter:variantOf a rdf:Property ;
+              rdfs:label "Variant Of"@en ;
+              rdfs:comment ""@en ;
+              rdfs:domain DnD5eCharacter:Variant ;
+              rdfs:range DnD5eCharacter:Race .
 
 DnD5eCharacter:unlocksAtClassLevel a rdf:Property ;
               rdfs:label "Unlocks At Class Level"@en ;
