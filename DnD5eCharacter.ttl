@@ -23,6 +23,11 @@ DnD5eCharacter:Ontology a owl:Ontology ;
 
 ## D&D Races
 
+DnD5eCharacter:Race 	a rdfs:Class ;
+						rdfs:subClassOf TTRpg:CharacterType ;
+						rdfs:label "Race"@en ;
+						rdfs:comment "A DnD5eCharacter:Race is the superclass that represents the concept of a race within Dungeons and Dragons. Every TTRpg:Character, playable or not, has a race."@en .
+
 DnD5eCharacter:Dragonborn 	a rdfs:Class ;
               rdfs:subClassOf DnD5eCharacter:Race ;
               rdfs:label "Dragonborn"@en ;
@@ -66,7 +71,6 @@ DnD5eCharacter:Tiefling 	a rdfs:Class ;
 ## D&D Subraces
 
 DnD5eCharacter:Subrace 	a rdfs:Class ;
-													rdfs:subClassOf DnD5eCharacter:Race ;
 													rdfs:label "Subrace"@en ;
 													rdfs:comment "A DnD5eCharacter:Subrace is the superclass that represents the concept of a subrace within Dungeons and Dragons. This further specifies the race of a character. Not every race has subraces tied to it."@en .
 
@@ -141,7 +145,6 @@ DnD5eCharacter:Turami a rdfs:Class ;
               rdfs:label "Turami"@en .
 
 DnD5eCharacter:Variant 	a rdfs:Class ;
-													rdfs:subClassOf DnD5eCharacter:Race ;
 													rdfs:label "Variant"@en ;
 													rdfs:comment "A DnD5eCharacter:Variant is the superclass that represents the concept of a variant within Dungeons and Dragons. This further specifies the race of a character. Not every race has variants tied to it."@en .
 
@@ -233,7 +236,6 @@ DnD5eCharacter:Level	a rdfs:Class ;
 ## D&D Subclasses
 
 DnD5eCharacter:Subclass 	a rdfs:Class ;
-													rdfs:subClassOf DnD5eCharacter:Class ;
 													rdfs:label "Subclass"@en ;
 													rdfs:comment "A DnD5eCharacter:Subclass is the superclass that represents the concept of a subclass within Dungeons and Dragons. Every DnD5eCharacter:Class has one or more DnD5eCharacter:Subclass attached to it. These often unlock at later levels."@en .
 
