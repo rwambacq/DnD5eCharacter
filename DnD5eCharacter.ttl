@@ -18,7 +18,7 @@ DnD5eCharacter:	a foaf:Document ;
 DnD5eCharacter:Ontology a owl:Ontology ;
 						rdfs:label "Dungeons & Dragons Fifth Edition Character"@en ;
 						rdfs:comment "An extension to the TTRpg ontology, that includes every aspect of the game Dungeons & Dragons required for creating a character (only the freely available information has been included)."@en ;
-            DnD5eCharacter:version "1.0.1" .
+            DnD5eCharacter:version "1.0.2" .
 
 ### Ontology Classes
 
@@ -79,11 +79,6 @@ DnD5eCharacter:Tiefling 	a rdfs:Class ;
 DnD5eCharacter:Subrace 	a rdfs:Class ;
 													rdfs:label "Subrace"@en ;
 													rdfs:comment "A DnD5eCharacter:Subrace is the superclass that represents the concept of a subrace within Dungeons and Dragons. This further specifies the race of a character. Not every race has subraces tied to it."@en .
-
-DnD5eCharacter:DraconicAncestry a rdfs:Class ;
-              rdfs:subClassOf DnD5eCharacter:Subrace ;
-              DnD5eCharacter:subraceOf DnD5eCharacter:Dragonborn ;
-              rdfs:label "Draconic Ancestry"@en .
 
 DnD5eCharacter:HillDwarf a rdfs:Class ;
               rdfs:subClassOf DnD5eCharacter:Subrace ;
@@ -297,51 +292,70 @@ DnD5eCharacter:DraconicBloodline 	a rdfs:Class ;
               rdfs:label "Draconic Bloodline"@en .
 
 DnD5eCharacter:BlueDragon 	a rdfs:Class ;
-              rdfs:subClassOf DnD5eCharacter:DraconicAncestry ;
+              rdfs:subClassOf DnD5eCharacter:Subrace ;
+              DnD5eCharacter:subraceOf DnD5eCharacter:Dragonborn ;
               rdfs:subClassOf DnD5eCharacter:DraconicBloodline ;
               rdfs:label "Blue Dragon"@en .
 
 DnD5eCharacter:BlackDragon 	a rdfs:Class ;
+              rdfs:subClassOf DnD5eCharacter:Subrace ;
+              DnD5eCharacter:subraceOf DnD5eCharacter:Dragonborn ;
               rdfs:subClassOf DnD5eCharacter:DraconicAncestry ;
               rdfs:subClassOf DnD5eCharacter:DraconicBloodline ;
               rdfs:label "Black Dragon"@en .
 
 DnD5eCharacter:CopperDragon 	a rdfs:Class ;
+              rdfs:subClassOf DnD5eCharacter:Subrace ;
+              DnD5eCharacter:subraceOf DnD5eCharacter:Dragonborn ;
               rdfs:subClassOf DnD5eCharacter:DraconicAncestry ;
               rdfs:subClassOf DnD5eCharacter:DraconicBloodline ;
               rdfs:label "Copper Dragon"@en .
 
 DnD5eCharacter:RedDragon 	a rdfs:Class ;
+              rdfs:subClassOf DnD5eCharacter:Subrace ;
+              DnD5eCharacter:subraceOf DnD5eCharacter:Dragonborn ;
               rdfs:subClassOf DnD5eCharacter:DraconicAncestry ;
               rdfs:subClassOf DnD5eCharacter:DraconicBloodline ;
               rdfs:label "Red Dragon"@en .
 
 DnD5eCharacter:BrassDragon 	a rdfs:Class ;
+              rdfs:subClassOf DnD5eCharacter:Subrace ;
+              DnD5eCharacter:subraceOf DnD5eCharacter:Dragonborn ;
               rdfs:subClassOf DnD5eCharacter:DraconicAncestry ;
               rdfs:subClassOf DnD5eCharacter:DraconicBloodline ;
               rdfs:label "Brass Dragon"@en .
 
 DnD5eCharacter:GoldDragon 	a rdfs:Class ;
+              rdfs:subClassOf DnD5eCharacter:Subrace ;
+              DnD5eCharacter:subraceOf DnD5eCharacter:Dragonborn ;
               rdfs:subClassOf DnD5eCharacter:DraconicAncestry ;
               rdfs:subClassOf DnD5eCharacter:DraconicBloodline ;
               rdfs:label "Gold Dragon"@en .
 
 DnD5eCharacter:SilverDragon 	a rdfs:Class ;
+              rdfs:subClassOf DnD5eCharacter:Subrace ;
+              DnD5eCharacter:subraceOf DnD5eCharacter:Dragonborn ;
               rdfs:subClassOf DnD5eCharacter:DraconicAncestry ;
               rdfs:subClassOf DnD5eCharacter:DraconicBloodline ;
               rdfs:label "Silver Dragon"@en .
 
 DnD5eCharacter:BronzeDragon 	a rdfs:Class ;
+              rdfs:subClassOf DnD5eCharacter:Subrace ;
+              DnD5eCharacter:subraceOf DnD5eCharacter:Dragonborn ;
               rdfs:subClassOf DnD5eCharacter:DraconicAncestry ;
               rdfs:subClassOf DnD5eCharacter:DraconicBloodline ;
               rdfs:label "Bronze Dragon"@en .
 
 DnD5eCharacter:GreenDragon 	a rdfs:Class ;
+              rdfs:subClassOf DnD5eCharacter:Subrace ;
+              DnD5eCharacter:subraceOf DnD5eCharacter:Dragonborn ;
               rdfs:subClassOf DnD5eCharacter:DraconicAncestry ;
               rdfs:subClassOf DnD5eCharacter:DraconicBloodline ;
               rdfs:label "Green Dragon"@en .
 
 DnD5eCharacter:WhiteDragon 	a rdfs:Class ;
+              rdfs:subClassOf DnD5eCharacter:Subrace ;
+              DnD5eCharacter:subraceOf DnD5eCharacter:Dragonborn ;
               rdfs:subClassOf DnD5eCharacter:DraconicAncestry ;
               rdfs:subClassOf DnD5eCharacter:DraconicBloodline ;
               rdfs:label "White Dragon"@en .
