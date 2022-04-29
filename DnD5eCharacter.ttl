@@ -18,7 +18,7 @@ DnD5eCharacter:	a foaf:Document ;
 DnD5eCharacter:Ontology a owl:Ontology ;
 						rdfs:label "Dungeons & Dragons Fifth Edition Character"@en ;
 						rdfs:comment "An extension to the TTRpg ontology, that includes every aspect of the game Dungeons & Dragons required for creating a character (only the freely available information has been included)."@en ;
-            DnD5eCharacter:version "1.0.2" .
+            DnD5eCharacter:version "1.0.3" .
 
 ### Ontology Classes
 
@@ -225,14 +225,6 @@ DnD5eCharacter:Wizard 	a rdfs:Class ;
               rdfs:subClassOf DnD5eCharacter:Class ;
               rdfs:label "Wizard"@en ;
               rdfs:comment "Wizards are supreme magic-users, defined and united as a class by the spells they cast. Drawing on the subtle weave of magic that permeates the cosmos, wizards cast spells of explosive fire, arcing lightning, subtle deception, brute-force mind control, and much more."@en .
-
-DnD5eCharacter:ClassLevel	a rdfs:Class ;
-							rdfs:label "Class Level" ;
-							rdfs:comment ""@en .
-
-DnD5eCharacter:Level	a rdfs:Class ;
-						rdfs:label "Level" ;
-						rdfs:comment ""@en .
 
 ## D&D Subclasses
 
@@ -3795,6 +3787,12 @@ DnD5eCharacter:variantOf a rdf:Property ;
               rdfs:comment ""@en ;
               rdfs:domain DnD5eCharacter:Variant ;
               rdfs:range DnD5eCharacter:Race .
+
+DnD5eCharacter:level a rdf:Property ;
+              rdfs:label "Level"@en ;
+              rdfs:comment ""@en ;
+              rdfs:domain DnD5eCharacter:Class ;
+              rdfs:range xsd:positiveInteger .
 
 DnD5eCharacter:unlocksAtClassLevel a rdf:Property ;
               rdfs:label "Unlocks At Class Level"@en ;
