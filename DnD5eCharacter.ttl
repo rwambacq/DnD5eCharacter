@@ -18,7 +18,7 @@ DnD5eCharacter:	a foaf:Document ;
 DnD5eCharacter:Ontology a owl:Ontology ;
 						rdfs:label "Dungeons & Dragons Fifth Edition Character"@en ;
 						rdfs:comment "An extension to the TTRpg ontology, that includes every aspect of the game Dungeons & Dragons required for creating a character (only the freely available information has been included)."@en ;
-            DnD5eCharacter:version "1.0.3" .
+            DnD5eCharacter:version "1.0.4" .
 
 ### Ontology Classes
 
@@ -836,7 +836,7 @@ DnD5eCharacter:Background 	a rdfs:Class ;
               rdfs:comment "A background gives more information about a character and can help you play that character by explaining their motivations and their past."@en .
 
 DnD5eCharacter:Acolyte 	a rdfs:Class ;
-              rdfs:subClassOf TTRpg:Background ;
+              rdfs:subClassOf DnD5eCharacter:Background ;
               rdfs:label "Acolyte"@en ;
               rdfs:comment "You have spent your life in the service of a temple to a specific god or pantheon of gods. You act as an intermediary between the realm of the holy and the mortal world, performing sacred rites and offering sacrifices in order to conduct worshipers into the presence of the divine. You are not necessarily a cleric - performing sacred rites is not the same thing as channeling divine power."@en .
 
