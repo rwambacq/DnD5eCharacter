@@ -18,7 +18,7 @@ DnD5eCharacter:	a foaf:Document ;
 DnD5eCharacter:Ontology a owl:Ontology ;
 						rdfs:label "Dungeons & Dragons Fifth Edition Character"@en ;
 						rdfs:comment "An extension to the TTRpg ontology, that includes every aspect of the game Dungeons & Dragons required for creating a character (only the freely available information has been included)."@en ;
-            DnD5eCharacter:version "1.0.4" .
+            DnD5eCharacter:version "1.0.5" .
 
 ### Ontology Classes
 
@@ -3883,6 +3883,12 @@ DnD5eCharacter:hasTerrain a rdf:Property ;
               rdfs:comment ""@en ;
               rdfs:domain TTRpg:Location ;
               rdfs:range DnD5eCharacter:Terrain .
+
+DnD5eCharacter:name a rdf:Property ;
+              rdfs:label "Name"@en ;
+              rdfs:comment ""@en ;
+              rdfs:domain TTRpg:Character ;
+              rdfs:range xsd:string .
 
 DnD5eCharacter:version a rdf:Property ;
               rdfs:label "Version"@en ;
